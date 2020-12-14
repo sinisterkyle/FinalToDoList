@@ -23,12 +23,12 @@ const newtodo = document.createElement("li");
 tododiv.appendChild(newtodo);
 
 const completedbutton = document.createElement("button");
-completedbutton.innerText = 'checked'
+completedbutton.innerText = 'complete'
 completedbutton.classList.add("complete-button");
 tododiv.appendChild(completedbutton);
 
 const deletebutton = document.createElement("button");
-deletebutton.innerText = 'X'
+deletebutton.innerText = 'x'
 deletebutton.classList.add("delete-button");
 tododiv.appendChild(deletebutton);
 
@@ -39,8 +39,6 @@ todoinput.value = "";
 
 
 };
-
-
 
 
 function deletecheck(event) {
@@ -56,9 +54,6 @@ function deletecheck(event) {
         todo.classList.toggle("completed")
     }
     
-
-
-
 
 }
 
